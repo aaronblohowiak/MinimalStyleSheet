@@ -17,6 +17,11 @@
 	-webkit-box-sizing: border-box;
 }
 
+/* Clearfix. le sigh. from html5boilerplate */
+.grid:before, .grid:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.grid:after { clear: both; }
+.grid { zoom: 1; }
+
 /* convenience styles. feel free to get rid of these if you would rather use semantic column names, which I suggest! */
 .grid > .twelfth { width: 8.334%; }
 .grid > .eigth { width: 12.5%;}
@@ -26,21 +31,3 @@
 .grid > .half{ width: 50%; }
 .grid > .twothirds{ width: 66.667%; }
 .grid > .threequarters { width: 75%; }
-
-/* Clearfix. le sigh. */
-.grid:after {
-	content: '[.]';
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
-}
-
-/* IE nonsense */
-.grid {
-	display: inline-block;
-}
-/*\*/
-.grid {
-	display: block;
-}
