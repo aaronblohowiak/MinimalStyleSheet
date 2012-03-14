@@ -1,0 +1,92 @@
+* {
+	font-family:'Helvetica Neue',Arial,Helvetica,sans-serif;
+	font-size: 16px;
+	line-height: 100%;
+	font-weight: 400;
+}
+
+h1 {
+	font-family:'HelveticaNeue-Bold','HelveticaNeue','Helvetica Neue',Arial,Helvetica,sans-serif;
+	font-size: 3em;
+	font-weight:bold;
+	line-height: 1em;
+}
+
+h2 {
+	font-family:'HelveticaNeue-Medium','HelveticaNeue','Helvetica Neue',Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+h3{
+	font-weight:100;
+	letter-spacing:1px;
+	font-size:2em;
+}
+
+h1 > small, h2 > small, h3 > small {
+	font-family:'HelveticaNeue-UltraLight', 'HelveticaNeue-Light', 'HelveticaNeue','Helvetica Neue',Arial,Helvetica,sans-serif;
+	letter-spacing: 1px;
+	font-size:1em;
+	font-weight:100;
+}
+
+h1 > small {
+	font-size:0.5em;
+}
+
+
+
+em{
+	font-weight:bold;
+	margin:0;
+	padding:0;
+}
+
+p{
+	line-height:2;
+	margin-top: 1em;
+	padding: 0;
+
+}
+
+/* colors! */
+
+* {
+	color: rgba(0,0,0,0.8);
+}
+
+/* lightest */
+h1 > small, h2 > small, h3 > small {
+	color: rgba(0,0,0,0.3);
+}
+
+/* light */
+p {
+	color: rgba(0,0,0,0.6);
+}
+
+/* black */
+
+h1 {
+	color:black;
+}
+
+/* blue */
+
+a:link, a:visited{
+	color: #2359b0;
+}
+
+a:hover{
+	color:green;
+}
+
+hr {
+	border:none;
+	border-top: 1px solid black;
+	height:1em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}

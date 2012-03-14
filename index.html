@@ -1,0 +1,119 @@
+<html>
+<body>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="flexigrid.css">
+	<link rel="stylesheet" type="text/css" href="typography.css">
+
+	<style>
+		/* custom styles */
+		.rounded-content, .nesting .content {
+			background-color: #24314b;
+			padding: 1em 0; /* dont have words against the margin*/
+			text-align:center;
+			margin: 10px 0px; /*vertical space */
+			height:3em;
+
+			/* child-proof it ! */
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+		}
+
+
+		#crazyborder {
+			border: 5px dashed white;
+		}
+
+		.container {
+			width:996px;
+			margin: 0 auto;
+			background-color: #ffde00;
+		}
+
+		.nesting { 
+			width:80%;
+			margin: 0 auto;
+			background-color: #ffde00;
+		}
+
+
+		.nesting .grid,  .nesting > div > div {
+			background-color: rgba(49, 70, 34, 0.5);
+		}
+
+		.container > div > div, .nesting .content {
+			color:white;
+		}
+
+		.explanatary{
+			width:996px;
+			margin: 0 auto;
+		}
+
+		.expository h2 {
+			text-align:center;
+		}
+
+	</style>
+
+	<div class="explanatary">
+		<div class="grid">
+			<div><div>
+				<h1>Minimal StyleSheet <small>Bootstrap::Rails : MSS::Sinatra</small></h1>
+				<hr/>
+			</div></div>
+			<div class="twothirds"><div>
+				<h2>Grid &amp; Layout</h2>
+				<p>We use grid systems because they let you divide the page horizontally with a constant gutter width without pulling your hair out. Now that we can finally use <code>box-sizing</code>, grid systems are <em>obsolete</em>.<p>
+				<p>This page exists to demonstrate the very simple solution that should replace them.  While large theme frameworks like <a href="http://twitter.github.com/boostrap/">Bootstrap</a> still have their place, there is a lighter way.</p>
+				
+			</div></div>
+			<div class="third"><div>
+				<h3>Typography</h3>
+				<p> Hi Visual hierarchy &amp; visual rhythym lets test it out</p>
+<p>One thing that you will notice is that the lines of text align even after a paragraph break. </p>
+			</div></div>
+		</div>
+	</div>
+
+	<div class="expository">
+		<h2>Fixed-Size Container <small>996px fixed</small></h2>
+		<div class="grid container">
+			<div class="twelfth"><div class="rounded-content"> 1/12 </div></div>			
+			<div class="twelfth"><div class="rounded-content"> 1/12 </div></div>
+			<div class="sixth"><div class="rounded-content"> 1/6 </div></div>
+			<div class="third"><div class="rounded-content"> 1/3 </div></div>
+			<div class="third"><div class="rounded-content"> 1/3 </div></div>
+			<div class="third"><div class="rounded-content"> 1/3 </div></div>
+			<div class="twothirds"><div class="rounded-content"> 2/3 </div></div>
+			<div class="eigth"><div class="rounded-content"> 1/8 </div></div>
+			<div class="eigth"><div class="rounded-content"> 1/8 </div></div>
+			<div class="quarter"><div class="rounded-content"> 1/4 </div></div>
+			<div class="half"><div class="rounded-content"> 1/2 </div></div>
+			<div class="quarter"><div class="rounded-content"> 1/4 </div></div>
+			<div class="threequarters"><div class="rounded-content" id="crazyborder"> border widths dont impact layout! </div></div>
+
+
+		</div>
+
+		<h2>Nesting "just works" <small>90% flex</small></h2>
+		<div class="grid nesting">
+			<div class="half"><div class="content">1/2</div></div>
+			<div class="half"><div class="content">1/2</div></div>
+
+			<div class="half grid">
+				<div><h2 style="color:white;letter-spacing:1px"> Here is a nested grid</h2></div>
+				<div class="half"><div class="content">1/2</div></div>
+				<div class="quarter"><div class="content">1/4</div></div>
+				<div class="quarter"><div class="content">1/4</div></div>
+			</div>
+			<div class="quarter"><div class="content">1/4</div></div>
+			<div class="quarter"><div class="content">1/4</div></div>
+			<div class="threequarters"><div class="content">3/4</div></div>
+			<div class="quarter"><div class="content">1/4</div></div>
+
+		</div>
+	</div>
+
+</body>
+</html>

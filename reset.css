@@ -1,0 +1,28 @@
+/*reset*/
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+pre, blockquote, ul, ol, dl {
+	margin: 0.5em 0;
+}
+
+li, dd, blockquote {
+	margin-left: 40px;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+code, pre{
+	font-family:Monaco, monospace;
+}

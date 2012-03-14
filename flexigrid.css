@@ -1,0 +1,46 @@
+/* setup container */
+.grid > div {
+	float: left;
+	padding:0 10px; /* 10px is 1/2 the gutter width. to change the gutter, just change this. everything else "just works". no math!  */
+	margin: 0;
+	width:100%;
+}
+
+.grid > .grid {
+	padding:0; /* safe to nest */
+}
+
+/* make the padding inside the width percentage - works in everything >= IE8 */
+.grid, .grid > div, .grid > div > div {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/* convenience styles. feel free to get rid of these if you would rather use semantic column names, which I suggest! */
+.grid > .twelfth { width: 8.334%; }
+.grid > .eigth { width: 12.5%;}
+.grid > .sixth { width: 16.667%; }
+.grid > .quarter, .grid > .fourth{ width: 25%; }
+.grid > .third{ width: 33.334%; }
+.grid > .half{ width: 50%; }
+.grid > .twothirds{ width: 66.667%; }
+.grid > .threequarters { width: 75%; }
+
+/* Clearfix. le sigh. */
+.grid:after {
+	content: '[.]';
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* IE nonsense */
+.grid {
+	display: inline-block;
+}
+/*\*/
+.grid {
+	display: block;
+}
